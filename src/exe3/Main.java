@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Produto[] ps = new Produto[5];
+        Produto[] ps = new Produto[12];
         Merge merge = new Merge();
         Linear linear = new Linear();
         Binary binary = new Binary();
@@ -39,7 +39,6 @@ public class Main {
 
                 break;
             case 2:
-                //com erro de lógica
                 merge.mergeAsc(ps, 0, ps.length - 1);
                 binary.find(ps, numeroEscolhido);
                 if (binary.isAchou()) {
